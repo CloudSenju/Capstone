@@ -3,41 +3,79 @@
 function Footer() {
     return (
       <>
-      <footer>
-          <div class="row">
-            <div class="column"> Logo</div>
-            <div class="column">
-              <ul id="footer-list">
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Reservations</li>
-                <li>Order Online</li>
-                <li>Login</li>
-              </ul>
+        <div class="container my-5">
+          <footer class="text-center text-white" style={{backgroundcolor: "#3f51b5"}}>
+            <div class="container">
+              <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                      <a href="#!" class="text-white">Home</a>
+                    </h6>
+                  </div>
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                      <a href="#!" class="text-white">About</a>
+                    </h6>
+                  </div>
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                      <a href="#!" class="text-white">Reservations</a>
+                    </h6>
+                  </div>
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                      <a href="#!" class="text-white">Order Online</a>
+                    </h6>
+                  </div>
+                </div>
+              </section>
+              <hr class="my-5" />
+              <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-8">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                      distinctio earum repellat quaerat voluptatibus placeat nam,
+                      commodi optio pariatur est quia magnam eum harum corrupti
+                      dicta, aliquam sequi voluptate quas.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section class="text-center mb-5">
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-github"></i>
+                </a>
+              </section>
             </div>
-            <div class="column"></div>
-              <ul id="footer-list">
-                <li class="heading">Contact Us</li>
-                <br/>
-                <li>Address</li>
-                <li>Email</li>
-                <li>Telephone Number</li>
-              </ul>
-            <div></div>
-            <div class="column">
-              <ul id="footer-list">
-                <li class="heading">Social Media</li>
-                <br/>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>X</li>
-              </ul>
+            <div
+                class="text-center p-3"
+                style={{backgroundcolor: "rgba(0, 0, 0, 0.2)"}}
+                >
+              © 2020 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/"
+                >MDBootstrap.com</a
+                >
             </div>
-         </div>
-        </footer>
+          </footer>
+        </div>
       </>
     );
-  }
-  
+  };
   export default Footer;
