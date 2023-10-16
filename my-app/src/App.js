@@ -7,7 +7,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />}/> 
+        <Route path="/" element={<HomePage />}/>
         <Route path="/Reservations" element={<BookingPage />} />
       </Routes>
     </BrowserRouter>

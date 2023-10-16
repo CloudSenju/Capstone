@@ -21,11 +21,11 @@ const DateTime = () => {
     <div id="date-time">
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Grid item>
-        <DateCalendar  value={selectedDate} onChange={handleDateChange} id="date-picker" defaultValue={dayjs()}  maxDate={maxDate} minDate={dayjs()}/>
-        <p>Selected Date: {selectedDate ? new Date(selectedDate).toLocaleDateString() : 'No date selected'}</p>
+        <DateCalendar aria-label="Date picker" value={selectedDate} onChange={handleDateChange} id="date-picker" defaultValue={dayjs()}  maxDate={maxDate} minDate={dayjs()}/>
+        <p aria-label="Select a date">Selected Date: {selectedDate ? new Date(selectedDate).toLocaleDateString() : 'No date selected'}</p>
       </Grid>
       <Grid item>
-        <Form />
+        <Form selectedDate={selectedDate}/>
       </Grid>
     </LocalizationProvider>
     </div>

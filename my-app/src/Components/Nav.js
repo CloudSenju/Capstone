@@ -7,10 +7,10 @@ function Nav() {
       <>
       <div>
         <nav>
-          <Link to="/" className="nav-item">Home</Link>
-          <ScrollLink to="about-section" smooth={true} duration={800} className="nav-item">About Little Lemon</ScrollLink>
-          <Link to="../Reservations" className="nav-item">Reservations</Link>
-          <ScrollLink to="contact-section" smooth={true} duration={800} className="nav-item">Contact Us</ScrollLink>
+          <Link to="/" className="nav-item" aria-label="Go to homepage">Home</Link>
+          <ScrollLink to="about-section" smooth={true} duration={800} className="nav-item" aria-label="Go to about us section">About Little Lemon</ScrollLink>
+          <Link to="../Reservations" className="nav-item" aria-label="Book online">Reservations</Link>
+          <ScrollLink to="contact-section" smooth={true} duration={800} className="nav-item" aria-label="Go to contact us section">Contact Us</ScrollLink>
         </nav>
       </div>
       </>
