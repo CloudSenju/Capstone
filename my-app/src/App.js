@@ -1,32 +1,18 @@
-import './App.css';
-import Nav from './Components/Nav';
-import Header from './Components/Header';
-import Main from './Components/Main';
-import Footer from './Components/Footer';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./Pages/Home"
+import BookingPage from "./Pages/BookingPage"
 
-function App() {
+export default function App() {
   return (
-    <>
-      <head>
-        <Header>
-        </Header>
-      </head>
-      <body>
-        <Nav>
-
-        </Nav>
-        <Main>
-
-        </Main>
-      </body>
-      <footer>
-        <Footer>
-
-        </Footer>
-      </footer>
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />}/> 
+        <Route path="/Reservations" element={<BookingPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

@@ -1,16 +1,23 @@
 import '../../App.css';
+import { LoremIpsum } from 'react-lorem-ipsum';
+import { Link } from "react-router-dom";
 
 function Hero() {
     return (
       <>
-        <div class="container" id="hero">
+        <div id="hero">
             <div class="text">
-                <h2>Your Text Goes Here</h2>
-                <p>Some description or content.</p>
-                <button>Click Me</button>
+                <h1>Little Lemon</h1>
+                <h3>Chicago</h3>
+                <div id="hero-text">
+                  <LoremIpsum p={5} avgSentencesPerParagraph={2} />
+                </div>
+                <button  id="hero-button">
+                  <Link to="../Reservations" className="nav-item">Book Online</Link>
+                </button>
             </div>
             <div class="image">
-                <img src="https://th.bing.com/th/id/OIP.3gbGuPgrgX7RNOPFf8UOnAHaE8?pid=ImgDet&rs=1" alt="Little Lemon"></img>
+                <img src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg" alt="Little Lemon" id="heroimg"></img>
             </div>
         </div>
       </>
