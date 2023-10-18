@@ -1,5 +1,4 @@
 import '../../App.css';
-import { LoremIpsum } from 'react-lorem-ipsum';
 
 function ReservationsHero() {
     return (

@@ -28,7 +28,7 @@ Nav .nav-item {
 
 #hero {
   display: flex;
-  background-color: #333; /* Dark background color */
+  background-color: #495E57; /* Dark background color */
   color: #fff; /* Text color */
   width: 100%;
   padding-right: 5%;
@@ -62,14 +62,15 @@ Nav .nav-item {
 }
 
 #hero-button {
-  background-color: #ff5733; /* Button color */
+  background-color: #F4CE14; /* Button color */
   padding: 10px 20px;
   border: none;
+  border-radius: 16px;
   cursor: pointer;
 }
 #hero-button a {
   text-decoration: none;
-  color: white;
+  color: #333333;
 }
 
 button:hover {
@@ -102,7 +103,7 @@ button:hover {
   padding-right: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: #333;
+  background-color: #495E57;
 }
 
 #testimonial-card{
@@ -179,7 +180,7 @@ button:hover {
 /* footer */
 #footer-container {
   display: flex;
-  background-color: #333; /* Dark background color */
+  background-color: #495E57; /* Dark background color */
   color: #fff; /* Text color */
   padding: 20px;
 }
@@ -278,7 +279,7 @@ input[type='number'] {
   display: flex;
   height: 50px;
   width: 200px;
-  border-radius: 20px;
+  border-radius: 16px;
   align-items: center;
   justify-content: center;
 }

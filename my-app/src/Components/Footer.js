@@ -7,7 +7,7 @@ function Footer() {
         <div id="footer-container">
           <div id="footer-items">
           <div class="image">
-              <img src="https://i.pinimg.com/originals/6e/ad/f2/6eadf29c90b10fbfd99badc474d61660.jpg"  id="footerimg"></img>
+              <img src="https://i.pinimg.com/originals/6e/ad/f2/6eadf29c90b10fbfd99badc474d61660.jpg"  id="footerimg" alt="footer-img"></img>
           </div>
           <div class="footer-links">
             <ui id="footer-list">

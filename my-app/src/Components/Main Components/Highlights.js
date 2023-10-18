@@ -21,7 +21,7 @@ import Typography from '@mui/material/Typography';
                 component="img"
                 height="194"
                 image={image}
-                alt="Paella dish"
+                alt="dish"
 
               />
               <CardContent>

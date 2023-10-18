@@ -3,7 +3,8 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import BButton from '../Button';
-import DateTime from './DateTime';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 function Form({selectedDate}) {
   const [name, setName] = useState('');
@@ -67,6 +68,7 @@ function Form({selectedDate}) {
         className="centered-form"
       >
         <div>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
           <TimePicker
             label="What time?"
             value={time}
@@ -74,6 +76,7 @@ function Form({selectedDate}) {
             onBlur={handleBlur}
             aria-label="Select a time"
             />
+            </LocalizationProvider>
         </div>
         <div>
           <TextField
