@@ -67,14 +67,12 @@ Nav .nav-item {
   border: none;
   border-radius: 16px;
   cursor: pointer;
+  height: 50px;
+  width: 150px;
 }
 #hero-button a {
   text-decoration: none;
   color: #333333;
-}
-
-button:hover {
-  background-color: #ff8c61; /* Button color on hover */
 }
 
 /* Highlights */
@@ -83,10 +81,11 @@ button:hover {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
+  background-color: rgb(247, 247, 228);
 }
 
 #highlightscard {
