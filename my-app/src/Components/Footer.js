@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
+import image from '../Assets/restaurant chef B cropped.jpg'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 
 function Footer() {
     return (
@@ -7,7 +12,7 @@ function Footer() {
         <div id="footer-container">
           <div id="footer-items">
           <div class="image">
-              <img src="https://i.pinimg.com/originals/6e/ad/f2/6eadf29c90b10fbfd99badc474d61660.jpg"  id="footerimg" alt="footer-img"></img>
+              <img src={image} id="footerimg" alt="footer-img"></img>
           </div>
           <div class="footer-links">
             <ui id="footer-list">
@@ -40,18 +45,16 @@ function Footer() {
                 Contact Number: +1 800 299 665 452
               </li>
               <li>
-                <p>Address:
-                  <br/>
-                  15 Jason str
-                  <br/>
-                  Chicago
-                  <br/>
-                  IL
-                  <br/>
-                  60657
-                  <br/>
-                  USA
-                </p>
+                Address:
+              </li>
+              <li>
+                15 Jason str
+              </li>
+              <li>
+                Chicago
+              </li>
+              <li>
+                IL
               </li>
             </ui>
           </div>
@@ -61,16 +64,13 @@ function Footer() {
                 <h3>Socials</h3>
               </li>
               <li>
-                <a  href="">Home</a>
+                <FacebookIcon/>
               </li>
               <li>
-                <a href="">About</a>
+                <InstagramIcon/>
               </li>
               <li>
-                <a href="">Reservation</a>
-              </li>
-              <li>
-                <a href="">Order Online</a>
+                <TwitterIcon/>
               </li>
             </ui>
           </div>

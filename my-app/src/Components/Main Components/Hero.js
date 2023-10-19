@@ -1,6 +1,7 @@
 import '../../App.css';
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { Link } from "react-router-dom";
+import image from "../../Assets/restauranfood.jpg"
 
 function Hero() {
     return (
@@ -17,7 +18,7 @@ function Hero() {
                 </button>
             </div>
             <div class="image">
-                <img src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg" alt="Little Lemon" id="heroimg"></img>
+                <img src={image} alt="Little Lemon" id="heroimg"></img>
             </div>
         </div>
       </>

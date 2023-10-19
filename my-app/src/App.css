@@ -24,6 +24,11 @@ Nav .nav-item {
   color: #333;
 }
 
+Nav .nav-item:hover {
+  cursor:grab;
+  color: #F4CE14;
+}
+
 /* hero */
 
 #hero {
@@ -225,16 +230,18 @@ Nav .nav-item {
 /* Bookings-Page */
 /* Bookings-Hero */
 #reservations-hero {
-  align-items: center;
+  align-items:top;
   display: flex;
   justify-content: center;
-  background-image: url('https://media.bizj.us/view/img/12359290/df104-5-of-13*1024xx2500-1406-0-255.jpg');
+  background-image: url('./Assets/restaurant.jpg');
   background-size: cover;
   background-position: center;
-  color: #fff; /* Text color */
+  color: #495E57; /* Text color */
   width: 100%;
   padding-right: 5%;
   height: 400px;
+  font-size: 30px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
 
   /* DateTime */
